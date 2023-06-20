@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <TextView
+        android:id="@+id/txtNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/colorWhite"
+        android:text="Mời nhập dữ liệu mới"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:background="@color/colorRed"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Nhập lại mật khẩu"
+        android:textSize="@dimen/text_lg"/>
+    <EditText
+        android:id="@+id/edtDuLieu  Cu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Nhập dữ liệu cũ"
+        android:textSize="@dimen/text_lg"/>
+    <EditText
+        android:id="@+id/edtDuLieuMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:hint="Nhập dữ liệu mới"
+        android:textSize="@dimen/text_lg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/bg_button"
+            android:text="Huỷ"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btnDongY"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_button"
+            android:text="Đồng Ý"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+        </LinearLayout>

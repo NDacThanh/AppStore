@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:background="@color/color_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp">
+
+
+            <Button
+                android:id="@+id/svProduct"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_share"
+                android:background="@color/bg_white_slate_200"
+                android:gravity="center|left"
+                android:paddingStart="10dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsvHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorGray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardview_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/colorTransparent"
+                            app:cardCornerRadius="10dp">
+
+                            <ViewFlipper
+                                android:id="@+id/viewFlipper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp" />
+                            <!--                                android:scaleType="centerCrop" -->
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycleViewListCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_form_log_in"
+                            android:padding="8dp" />
+
+
+                    </LinearLayout>
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:background="@drawable/bg_form_log_in"-->
+<!--                        android:paddingTop="10dp">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtRv1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:text="Sản phẩm khuyến mãi"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/home_noibat_xemthem"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginTop="5dp"-->
+                        <!--                        android:layout_marginEnd="10dp"-->
+                        <!--                        android:background="?android:attr/selectableItemBackground"-->
+                        <!--                        android:text="Xem tất cả"-->
+                        <!--                        android:drawableEnd="@drawable/chevron_right_solid"-->
+                        <!--                        android:textColor="@color/colorRed"-->
+                        <!--                        android:textSize="16sp"-->
+                        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <LinearLayout-->
+
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="8dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/bg_form_log_in"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:paddingTop="15dp"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+
+<!--                            app:layout_constraintVertical_bias="0.0">-->
+
+<!--                            <androidx.recyclerview.widget.RecyclerView-->
+<!--                                android:id="@+id/recyclerView_home_1"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="horizontal" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/btnXemthem1"-->
+<!--                                android:layout_width="150dp"-->
+<!--                                android:layout_height="45dp"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:background="@drawable/bg_button"-->
+<!--                                android:text="Xem thêm"-->
+<!--                                android:textAlignment="center"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <ProgressBar-->
+<!--                            android:id="@+id/loading_khuyen_mai"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:id="@+id/home_noibat_xemthem"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="5dp"-->
+                    <!--                        android:layout_marginEnd="10dp"-->
+                    <!--                        android:background="?android:attr/selectableItemBackground"-->
+                    <!--                        android:text="Xem tất cả"-->
+                    <!--                        android:drawableEnd="@drawable/chevron_right_solid"-->
+                    <!--                        android:textColor="@color/colorRed"-->
+                    <!--                        android:textSize="16sp"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_form_log_in"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Thịt, trứng"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_home_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/btnXemThem2"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button"
+                            android:text="Xem thêm"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_form_log_in"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Trái cây"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_home_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                        <Button
+                            android:id="@+id/btnXemThem3"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button"
+                            android:text="Xem thêm"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_form_log_in"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Hải sản"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_home_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/btnXemthem4"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button"
+                            android:text="Xem thêm"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_form_log_in"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Bánh các loại"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_home_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/btnXemthem5"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button"
+                            android:text="Xem thêm"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="70dp"
+                        android:background="@drawable/bg_form_log_in"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtRv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Sữa các loại"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_home_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/btnXemthem6"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_button"
+                            android:text="Xem thêm"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                android:id ="@+id/bottomNavigationView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/colorWhite"-->
+<!--                app:menu = "@menu/menu_navigation_bottom"-->
+<!--                android:layout_weight="1"-->
+<!--                app:itemIconTint="@color/custome_color_bottom_navigation"-->
+<!--                app:itemTextColor="@color/custome_color_bottom_navigation"-->
+<!--                app:labelVisibilityMode="labeled"/>-->
+
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+</LinearLayout>

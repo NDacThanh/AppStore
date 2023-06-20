@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_button"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnOderBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_left_white" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Đơn hàng"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="488dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/btnDXL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Đang xử lý"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnYCH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Yêu cầu huỷ"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnDgG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Đang giao"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnDG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_radius"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Đã giao"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnDH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_radius"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Đã huỷ"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCardViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                app:itemIconTint="@color/custome_color_bottom_navigation"
+                app:itemTextColor="@color/custome_color_bottom_navigation"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_navigation_bottom" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

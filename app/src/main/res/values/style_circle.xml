@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="circle">
+        <item name="cornerSize">50%</item>
+    </style>
+    <dimen name="app_bar_height">54dp</dimen>
+    <dimen name="text_xs">12dp</dimen>
+    <dimen name="text_sm">14dp</dimen>
+    <dimen name="text_base">16dp</dimen>
+    <dimen name="text_lg">18dp</dimen>
+    <dimen name="text_title">18dp</dimen>
+
+</resources>

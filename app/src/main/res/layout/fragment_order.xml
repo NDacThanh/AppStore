@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_button"
+            android:gravity="center_vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Đơn hàng"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="596dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorGray">
+
+                    <Button
+                        android:id="@+id/btnDXL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_radius"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Đang xử lý"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnYCH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_radius"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Yêu cầu huỷ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnDgG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_radius"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Đang giao"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnDG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_radius"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Đã giao"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnDH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_radius"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Đã huỷ"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12dp"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCardViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="559dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

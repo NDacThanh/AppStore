@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#2B2B2B"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layout_log_in"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_form_log_in"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circle"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:gravity="center"
+                android:text="Cửa hàng bách hóa"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/label_custom"
+                android:drawableLeft="@drawable/ic_user_red"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="username"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/label_custom"
+                android:drawableLeft="@drawable/ic_lock_red"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/txtForgotPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="20dp"
+                android:gravity="right"
+                android:layout_margin="3dp"
+                android:text="Forgot password ?" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_button"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_lg"
+                android:textColor="@color/colorWhite"
+                android:text="Log In" />
+
+            <Button
+                android:id="@+id/btnCreateAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_lg"
+                android:textColor="@color/colorWhite"
+                android:text="Create New Account" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

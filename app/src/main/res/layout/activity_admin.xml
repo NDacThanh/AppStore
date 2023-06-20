@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layout_log_in"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_from_user"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageButton
+                    android:id="@+id/imgAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/avatar"
+                    android:scaleType="fitXY" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtNameAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Admin"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnQLND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_custom"
+                    android:drawableStart="@drawable/ic_user_red"
+                    android:drawableEnd="@drawable/ic_right_red"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="10dp"
+                    android:text="Quản lí người dùng"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_base" />
+
+                <Button
+                    android:id="@+id/btnQLDSSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_custom"
+                    android:drawableStart="@drawable/ic_database"
+                    android:drawableEnd="@drawable/ic_right_red"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="10dp"
+                    android:text="Quản lí danh sách sản phẩm "
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_base" />
+                <Button
+                    android:id="@+id/btnThemSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_custom"
+                    android:drawableStart="@drawable/them"
+                    android:drawableEnd="@drawable/ic_right_red"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="10dp"
+                    android:text="Thêm sản phẩm"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_base" />
+
+                <Button
+                    android:id="@+id/btnThongKe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_custom"
+                    android:drawableStart="@drawable/icon_cart"
+                    android:drawableEnd="@drawable/ic_right_red"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="10dp"
+                    android:text="Thống kê đơn hàng"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_base" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnDangXuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button"
+                android:text="Đăng Xuất"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_lg"
+                android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
